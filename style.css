@@ -77,3 +77,150 @@ header {
     background: #106f5a;
     transform: translateY(-2px);
 }
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 650px;
+    background:
+        radial-gradient(circle at 90% 20%, #d7f4e9 0%, transparent 35%),
+        linear-gradient(135deg, #f5fffb, #e8f8f1);
+
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    padding: 80px 25px;
+
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.subtitle {
+    color: #159477;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: clamp(45px, 6vw, 75px);
+    line-height: 1.05;
+    color: #143d36;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    display: block;
+    color: #159477;
+}
+
+.description {
+    color: #627873;
+    max-width: 580px;
+    font-size: 17px;
+    margin-bottom: 35px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-secondary {
+    display: inline-block;
+    padding: 14px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background: #159477;
+    color: white;
+    box-shadow: 0 10px 25px rgba(21, 148, 119, 0.2);
+}
+
+.btn-primary:hover {
+    background: #106f5a;
+    transform: translateY(-4px);
+}
+
+.btn-secondary {
+    border: 2px solid #159477;
+    color: #159477;
+}
+
+.btn-secondary:hover {
+    background: #159477;
+    color: white;
+}
+
+
+/* HERO CARD */
+
+.hero-card {
+    background: white;
+    padding: 45px;
+    border-radius: 35px;
+    box-shadow: 0 25px 70px rgba(35, 100, 80, 0.12);
+    text-align: center;
+    animation: floating 4s ease-in-out infinite;
+}
+
+.doctor-icon {
+    width: 110px;
+    height: 110px;
+    margin: auto auto 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #e2f7ef;
+    border-radius: 50%;
+    font-size: 55px;
+}
+
+.hero-card h3 {
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.hero-card p {
+    color: #71817e;
+}
+
+.health-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 30px;
+    border-top: 1px solid #e8eeee;
+    padding-top: 25px;
+}
+
+.health-info strong,
+.health-info small {
+    display: block;
+}
+
+.health-info strong {
+    color: #159477;
+    font-size: 22px;
+}
+
+.health-info small {
+    color: #82918e;
+}
