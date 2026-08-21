@@ -314,3 +314,72 @@ header {
     font-weight: bold;
 }
 
+/* =========================
+   ARTICLE
+========================= */
+
+.article-section {
+    padding: 100px 25px;
+    background: #eef8f4;
+}
+
+.article-container {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.article-card {
+    background: white;
+    border-radius: 22px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.article-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(30, 100, 80, 0.12);
+}
+
+.article-image {
+    height: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 75px;
+}
+
+.image-one {
+    background: #dff6eb;
+}
+
+.image-two {
+    background: #e1f0fa;
+}
+
+.image-three {
+    background: #eee7fb;
+}
+
+.article-content {
+    padding: 25px;
+}
+
+.article-content small {
+    color: #159477;
+    font-weight: bold;
+}
+
+.article-content h3 {
+    margin: 8px 0 12px;
+    font-size: 21px;
+}
+
+.article-content p {
+    color: #74837f;
+    font-size: 14px;
+    margin-bottom: 18px;
+}
